@@ -1,0 +1,41 @@
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.chicken {
+    top: 150px;
+    left: 50px;
+}
+
+.fish {
+    top: 50px;
+    left: 150px;
+}
+
+.shrimp {
+    top: 20px;
+    left: 20px;
+}
+
+.cat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.draggable {
+    position: absolute;
+    z-index: 1;
+    cursor: grab;
+    transition-property: scale, opacity;
+    transition-duration: 0.2s;
+    touch-action: none;
+}
+
+.draggable.is-dragging {
+    cursor: grabbing;
+    opacity: 0.5;
+    scale: 1.05;
+}
